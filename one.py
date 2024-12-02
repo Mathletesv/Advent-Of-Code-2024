@@ -1,24 +1,17 @@
-read = open("one.txt", "r")
-ones = []
-twos = []
-while next_line := read.readline():
-    [one, two] = next_line.split()
-    ones.append(int(one))
-    twos.append(int(two))
+ones, twos = [], []
+with open("one.txt", "r") as read:
+	for line in read:
+		one, two = map(int, line.split())
+		ones.append(one)
+		twos.append(two)
 ones.sort()
 twos.sort()
 
 def one():
-    sum = 0
-    for i in range(len(ones)):
-        sum += abs(ones[i] - twos[i])
-    print(sum)
+    print(sum(abs(one - two) for one, two in zip(ones, twos)))
 
 def two():
-    sum = 0
-    for i in range(len(ones)):
-        sum += ones[i] * twos.count(ones[i])
-    print(sum)
+    print(sum(one * twos.count(one) for one in ones))
 
 one()
 two()
