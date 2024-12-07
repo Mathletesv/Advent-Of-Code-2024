@@ -10,3 +10,4 @@ Advent of Code 2024 Solutions
 | 4 | Iterate and brute force | Iterate and brute force |
 | 5 | Direct Simulation | Direct Simulation |
 | 6 | Brute force | Iterate and brute force |
+| 7 | Recursion | Recursion with 1 more case |
