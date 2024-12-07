@@ -1,39 +1,24 @@
-res, nums = [], []
 with open("seven.txt", "r") as read:
-	for line in read:
-		sres, snums = line.split(": ")
-		res.append(int(sres))
-		nums.append(list(map(int, snums.split(" "))))
+	data = [(int(line.split(": ")[0]), list(map(int, line.split(": ")[1].split()))) for line in read]
 
-def solve(res, nums, total, i):
+def solve(res, nums, total, i, concat=False):
 	if i == len(nums):
-		if total == res:
-			return True
-		return False
+		return total == res
 	if total > res:
 		return False
-	return solve(res, nums, total + nums[i], i + 1) or solve(res, nums, total * nums[i], i + 1)
+	opts = [
+		solve(res, nums, total + nums[i], i + 1, concat),
+		solve(res, nums, total * nums[i], i + 1, concat)
+	]
+	if concat:
+		opts.append(solve(res, nums, int(f"{total}{nums[i]}"), i + 1, concat))
+	return any(opts)
 
 def one():
-	count = 0
-	for r, n in zip(res, nums):
-		count += r if solve(r, n, n[0], 1) else 0
-	print(count)
-
-def solve2(res, nums, total, i):
-	if i == len(nums):
-		if total == res:
-			return True
-		return False
-	if total > res:
-		return False
-	return solve2(res, nums, total + nums[i], i + 1) or solve2(res, nums, total * nums[i], i + 1) or solve2(res, nums, int(f"{total}{nums[i]}"), i + 1)
+	print(sum(r for r, n in data if solve(r, n, n[0], 1)))
 
 def two():
-	count = 0
-	for r, n in zip(res, nums):
-		count += r if solve2(r, n, n[0], 1) else 0
-	print(count)
+	print(sum(r for r, n in data if solve(r, n, n[0], 1, True)))
 
 one()
 two()
