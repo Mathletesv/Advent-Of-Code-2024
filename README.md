@@ -12,3 +12,5 @@ Advent of Code 2024 Solutions
 | 6 | Brute force | Iterate and brute force |
 | 7 | Recursion | Recursion with 1 more case |
 | 8 | Iterate and brute force | Iterate and brute force |
+| 9 | Brute force moving files back | Same brute force with full chunks |
+| 10 | Descend in order of heights with a set | Descend in order of heights with counts |
