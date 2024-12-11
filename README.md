@@ -14,3 +14,4 @@ Advent of Code 2024 Solutions
 | 8 | Iterate and brute force | Iterate and brute force |
 | 9 | Brute force moving files back | Same brute force with full chunks |
 | 10 | Descend in order of heights with a set | Descend in order of heights with counts |
+| 11 | Brute force recursion | Recursion with memoization |
