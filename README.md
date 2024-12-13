@@ -15,3 +15,5 @@ Advent of Code 2024 Solutions
 | 9 | Brute force moving files back | Same brute force with full chunks |
 | 10 | Descend in order of heights with a set | Descend in order of heights with counts |
 | 11 | Brute force recursion | Recursion with memoization |
+| 12 | Flood fill and counting | Flood fill creating perimeter with unique coordinates |
+| 13 | Solving the system | Solving the system |
