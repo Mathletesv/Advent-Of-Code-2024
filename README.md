@@ -17,3 +17,4 @@ Advent of Code 2024 Solutions
 | 11 | Brute force recursion | Recursion with memoization |
 | 12 | Flood fill and counting | Flood fill creating perimeter with unique coordinates |
 | 13 | Solving the system | Solving the system |
+| 14 | Addition with mod | Iteration for consecutive robots |
