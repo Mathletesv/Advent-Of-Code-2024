@@ -18,3 +18,4 @@ Advent of Code 2024 Solutions
 | 12 | Flood fill and counting | Flood fill creating perimeter with unique coordinates |
 | 13 | Solving the system | Solving the system |
 | 14 | Addition with mod | Iteration for consecutive robots |
+| 15 | Direct simulation | Direct simulation with recursion |
