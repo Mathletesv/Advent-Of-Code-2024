@@ -19,3 +19,4 @@ Advent of Code 2024 Solutions
 | 13 | Solving the system | Solving the system |
 | 14 | Addition with mod | Iteration for consecutive robots |
 | 15 | Direct simulation | Direct simulation with recursion |
+| 16 | Dijkstra | Dijkstra followed by BFS |
