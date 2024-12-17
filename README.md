@@ -20,3 +20,4 @@ Advent of Code 2024 Solutions
 | 14 | Addition with mod | Iteration for consecutive robots |
 | 15 | Direct simulation | Direct simulation with recursion |
 | 16 | Dijkstra | Dijkstra followed by BFS |
+| 17 | Direct simulation | Recursive backtracking |
