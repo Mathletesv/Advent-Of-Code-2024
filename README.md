@@ -22,3 +22,4 @@ Advent of Code 2024 Solutions
 | 16 | Dijkstra | Dijkstra followed by BFS |
 | 17 | Direct simulation | Recursive backtracking |
 | 18 | BFS | Binary Search with BFS |
+| 19 | Dynamic Programming | Dynamic Programming |
