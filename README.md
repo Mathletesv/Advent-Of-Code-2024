@@ -23,3 +23,4 @@ Advent of Code 2024 Solutions
 | 17 | Direct simulation | Recursive backtracking |
 | 18 | BFS | Binary Search with BFS |
 | 19 | Dynamic Programming | Dynamic Programming |
+| 20 | Maze simulation | Brute force |
