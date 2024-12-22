@@ -24,3 +24,5 @@ Advent of Code 2024 Solutions
 | 18 | BFS | Binary Search with BFS |
 | 19 | Dynamic Programming | Dynamic Programming |
 | 20 | Maze simulation | Brute force |
+| 21 | DFS + BFS | DFS + BFS |
+| 22 | Direct simulation | Direct simulation with sets |
