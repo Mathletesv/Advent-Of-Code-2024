@@ -1,19 +1,19 @@
 with open("twentytwo.txt", "r") as read:
   secrets = list(map(int, read.read().split("\n")))
 
+MOD = 16777216
+
+def next(secret):
+  secret = (secret ^ (secret * 64)) % MOD
+  secret = (secret ^ (secret // 32)) % MOD
+  secret = (secret ^ (secret * 2048)) % MOD
+  return secret
+
 def one():
   total = 0
   for secret in secrets:
-    for i in range(2000):
-      mix = secret * 64
-      secret ^= mix
-      secret %= 16777216
-      mix = secret // 32
-      secret ^= mix
-      secret %= 16777216
-      mix = secret * 2048
-      secret ^= mix
-      secret %= 16777216
+    for _ in range(2000):
+      secret = next(secret)
     total += secret
   print(total)
 
@@ -23,26 +23,16 @@ def two():
     seen = set()
     seq = []
     prev = secret % 10
-    for i in range(2000):
-      mix = secret * 64
-      secret ^= mix
-      secret %= 16777216
-      mix = secret // 32
-      secret ^= mix
-      secret %= 16777216
-      mix = secret * 2048
-      secret ^= mix
-      secret %= 16777216
+    for _ in range(2000):
+      secret = next(secret)
       seq.append((secret % 10 - prev))
       prev = secret % 10
       if len(seq) == 4:
         seqt = tuple(seq)
         if seqt not in seen:
           seen.add(seqt)
-          if seqt not in seqs:
-            seqs[seqt] = 0
-          seqs[seqt] += prev
-        seq = seq[1:]
+          seqs[seqt] = seqs.get(seqt, 0) + prev
+        seq.pop(0)
   print(max(seqs.values()))
 
 one()
