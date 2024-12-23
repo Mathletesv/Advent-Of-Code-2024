@@ -26,3 +26,4 @@ Advent of Code 2024 Solutions
 | 20 | Maze simulation | Brute force |
 | 21 | DFS + BFS | DFS + BFS |
 | 22 | Direct simulation | Direct simulation with sets |
+| 23 | Brute force | Networkx Cheese |
