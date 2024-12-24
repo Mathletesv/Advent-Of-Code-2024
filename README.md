@@ -27,3 +27,4 @@ Advent of Code 2024 Solutions
 | 21 | DFS + BFS | DFS + BFS |
 | 22 | Direct simulation | Direct simulation with sets |
 | 23 | Brute force | Networkx Cheese |
+| 24 | Toposort on a stack | Paper + Pencil |
