@@ -28,3 +28,4 @@ Advent of Code 2024 Solutions
 | 22 | Direct simulation | Direct simulation with sets |
 | 23 | Brute force | Networkx Cheese |
 | 24 | Toposort on a stack | Paper + Pencil |
+| 25 | Test all pairs | GG |
